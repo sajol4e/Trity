@@ -28,6 +28,8 @@ if option == 1:
     print "\033[1;33m[*] Loading...\033[0m"
     os.system('apt-get install python-pip')
     import pip
+    os.system('pip install google')
+    os.system('pip install netifaces')
     install = os.system("apt-get update && apt-get install -y build-essential git")
     install2 = os.system("cp -R trity/ /opt/ && cp trity.py /opt/trity && cp run.sh /opt/trity && cp run.sh /usr/bin/trity && chmod +x /usr/bin/trity")
     os.system('apt-get install sendemail')
