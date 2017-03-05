@@ -37,8 +37,9 @@ try:
     import pythonwhois
     import argparse
     import google
-except ImportError:
+except ImportError as e:
     print (color.UNDERLINE + "\033[91m" + "You don't have some modules installed! \nPlease run install.py to install this tool fully! " + color.END)
+    print "Error: {}".format(e)
     sys.exit()
 class color:
    PURPLE = '\033[95m'
@@ -113,7 +114,7 @@ def banner1():
     print ""+M+"|----- Made by _t0x1c aka toxic -----|"
     print color.DARKCYAN +"|-----      Version: 3.0.1      -----|"
     print color.WARNING + "|-----   1 tool - 35 choices    -----|"
-    print color.RED + "|-----  www.toxic-ig.github.io  -----|"
+    print color.RED + "|-----    toxic-ig.github.io    -----|"
     print color.PURPLE + "\n|----- A Warm Welcome to Trity! -----|"
     print color.BLUE + "|----- Network Pentesting tool! -----|"
     print color.YELLOW + "|----- Have Fun and Stay Legal! -----|"
@@ -264,10 +265,11 @@ def tritymain():
 	    elif main == "anonymous":
 	        anon()
 	    elif main == "contact":
-	        print(''+T+'' + color.UNDERLINE + 'Skype:'+W+'' + color.BOLD + ' infamouzgaming' + color.END)
+	        print(''+T+'' + color.UNDERLINE + 'Skype:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
 	        print(''+T+'' + color.UNDERLINE + 'Instagram:'+W+'' + color.BOLD + ' @_t0x1c - www.instagram.com/_t0x1c' + color.END)
-	        print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' t0x1cigyt@gmail.com' + color.END)
+	        print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
 	        print(''+T+'' + color.UNDERLINE + 'XMPP:'+W+'' + color.BOLD + ' toxic-ig@exploit.im' + color.END)
+		print(''+T+'' + color.UNDERLINE + 'Twitter:'+W+'' + color.BOLD + ' @toxicnull' + color.END)
 	    elif main == "ping":
 		while True:
 	            hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
@@ -305,7 +307,7 @@ def tritymain():
 	        os.system('ls')
 	    elif main == "tool":
 	        print(color.UNDERLINE + ''+C+'Version: 3.0.1' + color.END)
-	        print(color.UNDERLINE + ''+C+'Time spent on it: 74 hours - 21 minutes' + color.END)
+	        print(color.UNDERLINE + ''+C+'Time spent on it: 74 hours - 26 minutes' + color.END)
 	        print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
 	    elif main == "website":
 		while True:
