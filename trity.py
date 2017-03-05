@@ -40,6 +40,7 @@ try:
 except ImportError as e:
     print (color.UNDERLINE + "\033[91m" + "You don't have some modules installed! \nPlease run install.py to install this tool fully! " + color.END)
     print "Error: {}".format(e)
+    print "Execute: pip install <module name>"
     sys.exit()
 class color:
    PURPLE = '\033[95m'
