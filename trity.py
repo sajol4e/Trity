@@ -139,8 +139,9 @@ print color.YELLOW + "|----- Have Fun and Stay Legal! -----|"
 time.sleep(0.1)
 r = requests.get('http://pastebin.com/raw/vYcBSV4w') 
 
-if '3.1' not in r.text:
+if '3.2' not in r.text:
     print (''+R+'\nYou need to update! The newest version is: ' + color.BOLD + color.UNDERLINE + r.text + '\n')
+    time.sleep(5)
 else:
     print ('')
 swear = "fuck", "shit", "nigga", "bitch", "dick", "pussy", "cunt", "nigger", "asshole", "ass"
@@ -307,7 +308,7 @@ def tritymain():
 	    elif main == "ls":
 	        os.system('ls')
 	    elif main == "tool":
-	        print(color.UNDERLINE + ''+C+'Version: 3.0.1' + color.END)
+	        print(color.UNDERLINE + ''+C+'Version: 3.2' + color.END)
 	        print(color.UNDERLINE + ''+C+'Time spent on it: 74 hours - 26 minutes' + color.END)
 	        print(color.UNDERLINE + ''+C+'toxic is a sp00ky h4ck3r' + color.END)
 	    elif main == "website":
