@@ -113,7 +113,7 @@ banner()
 def banner1():
     print ""
     print ""+M+"|----- Made by _t0x1c aka toxic -----|"
-    print color.DARKCYAN +"|-----      Version: 3.0.1      -----|"
+    print color.DARKCYAN +"|-----      Version: 3.2        -----|"
     print color.WARNING + "|-----   1 tool - 35 choices    -----|"
     print color.RED + "|-----    toxic-ig.github.io    -----|"
     print color.PURPLE + "\n|----- A Warm Welcome to Trity! -----|"
@@ -125,11 +125,11 @@ print ""
 time.sleep(0.1)
 print ""+M+"|----- Made by _t0x1c aka toxic -----|" 
 time.sleep(0.1)
-print color.DARKCYAN + "|-----      Version: 3.0.1      -----|"
+print color.DARKCYAN + "|-----      Version: 3.2        -----|"
 time.sleep(0.1)
 print color.WARNING + "|-----   1 tool - 35 choices    -----|"
 time.sleep(0.1) 
-print color.RED + "|-----  www.toxic-ig.github.io  -----|"
+print color.RED + "|-----    toxic-ig.github.io    -----|"
 time.sleep(0.1)
 print color.PURPLE + "\n|----- A Warm Welcome to Trity! -----|"
 time.sleep(0.1)
