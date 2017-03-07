@@ -46,6 +46,9 @@ except ImportError as e:
 	os.system("easy_install pip")
 	os.system("sudo pip uninstall requests")
 	os.system("sudo pip install requests")
+    elif (e) == "Unable to locate package lib32ncurses5-dev"
+	os.system("sudo apt-get update")
+	os.system("sudo apt-get install lib32ncurses5-dev lib32ncurses5 lib32bz2-1.0")
     sys.exit()
 class color:
    PURPLE = '\033[95m'
