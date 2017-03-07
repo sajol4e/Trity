@@ -41,6 +41,11 @@ except ImportError as e:
     print (color.UNDERLINE + "\033[91m" + "You don't have some modules installed! \nPlease run install.py to install this tool fully! " + color.END)
     print "Error: {}".format(e)
     print "Execute: pip install <module name>"
+    if (e) == "DependencyWarning"
+	os.system("apt-get remove python-pip")
+	os.system("easy_install pip")
+	os.system("sudo pip uninstall requests")
+	os.system("sudo pip install requests")
     sys.exit()
 class color:
    PURPLE = '\033[95m'
@@ -145,7 +150,7 @@ if '3.2' not in r.text:
 else:
     print ('')
 swear = "fuck", "shit", "nigga", "bitch", "dick", "pussy", "cunt", "nigger", "asshole", "ass"
-spell = "helpp", "hellp", "bannerr", "baner", "emial", "HELP", "hwlp", "wesbite", "ehco", "anonymouss", "anonymouse", "toool", "tooll", "carft", "Info", "spooof", "spooff", "ecnode", "decde", "encde", "craftt", "qoute", "sitexists", "hlep", "claer"
+spell = "helpp", "hellp", "bannerr", "baner", "emial", "HELP", "hwlp", "wesbite", "ehco", "anonymouss", "anonymouse", "toool", "tooll", "carft", "Info", "spooof", "spooff", "ecnode", "decde", "encde", "craftt", "qoute", "sitexists", "hlep", "claer", "twiter"
 def tritymain():
     while True:
         try:
