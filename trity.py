@@ -1,6 +1,6 @@
 # coding: utf-8
 #!/usr/bin/env python
-import sys, platform, subprocess, socket, time, os, urllib, platform, random, string, smtplib, requests, urllib2, getpass, zipfile
+import sys, platform, subprocess, socket, time, os, urllib, platform, random, string, smtplib, urllib2, getpass, zipfile
 from urllib2 import urlopen
 from time import sleep
 from getpass import getpass
@@ -37,20 +37,19 @@ try:
     import pythonwhois
     import argparse
     import google
+    import requests
 except ImportError as e:
+    os.system("sudo pip install --upgrade pip")
     print (color.UNDERLINE + "\033[91m" + "You don't have some modules installed! \nPlease run install.py to install this tool fully! " + color.END)
     print "Error: {}".format(e)
     print "Execute: pip install <module name>"
-    if (e) == "DependencyWarning":
-	os.system("apt-get remove python-pip")
-	os.system("easy_install pip")
-	os.system("sudo pip uninstall requests")
-	os.system("sudo pip install requests")
-    elif (e) == "Unable to locate package lib32ncurses5":
-	os.system("sudo apt-get update")
-	os.system("sudo apt-get install lib32ncurses5 lib32bz2-1.0")
-    else:
-	os.system("sudo apt-get update")
+    os.system("apt-get remove python-pip")
+    os.system("easy_install pip")
+    os.system("sudo pip uninstall requests")
+    os.system("sudo pip install requests")
+    os.system("sudo apt-get update")
+    os.system("sudo apt-get install lib32ncurses5 lib32bz2-1.0")
+    os.system("sudo apt-get update")
     sys.exit()
 class color:
    PURPLE = '\033[95m'
@@ -225,6 +224,7 @@ def tritymain():
 		        try:
 	                    inter = raw_input(''+T+'' + color.UNDERLINE + 'Interface>' + color.END)
 	                    os.system('spoof-mac.py randomize ' + inter)
+			    print ""+C+"[!] Keep in mind you won't have internet during the time of your spoofed MAC!"
 	                    print ""+G+"[*] Done! "+C+"To change you MAC Address back to your original, restart your computer\n or set your MAC address to your original"
 		        except:
 		            print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Oops.... Something went wrong!" + color.END)
@@ -233,7 +233,7 @@ def tritymain():
 	                    inter = raw_input(''+T+'' + color.UNDERLINE + 'Interface>' + color.END)
 		            setmac = raw_input(''+T+'' + color.UNDERLINE + 'New MAC>' + color.END)
 	                    os.system('spoof-mac.py set ' + setmac + ' ' + inter)
-			    print ""+C+"Keep in mind you won't have internet during the time of your spoofed MAC!"
+			    print ""+C+"[!] Keep in mind you won't have internet during the time of your spoofed MAC!"
 		            print ""+G+"[*] Done!"+C+" To change you MAC Address back to your original, restart your computer\n or set your MAC address to your original"
 		        except:
 		            print (""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Oops... Something went wrong!" + color.END)
