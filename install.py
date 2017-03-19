@@ -30,6 +30,7 @@ if option == 1:
     import pip
     os.system('sudo apt-get install libjpeg-dev libfreetype6 zlib1g-dev')
     os.system('pip install google')
+    os.system('pip install requests')
     os.system('pip install pythonwhois')
     os.system('sudo apt-get install libjpeg-dev libfreetype6 zlib1g-dev')
     os.system('pip install PIL')
